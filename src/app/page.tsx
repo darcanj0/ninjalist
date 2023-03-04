@@ -1,5 +1,7 @@
+import DefaultLink from "@/components/DefaultLink/DefaultLink";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
+import { Routes } from "./routes";
 
 export default function Home() {
   return (
@@ -31,6 +33,7 @@ export default function Home() {
         perspiciatis id mollitia quibusdam. Ad doloremque quaerat temporibus
         sequi officia culpa nostrum ex?
       </p>
+      <DefaultLink path={Routes.NINJAS} text="See Ninja Listing" />
       <Footer />
     </div>
   );

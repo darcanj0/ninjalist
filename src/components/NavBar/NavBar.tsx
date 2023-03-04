@@ -1,12 +1,15 @@
+import { Routes } from "@/app/routes";
+import DefaultLink from "../DefaultLink/DefaultLink";
+
 const NavBar = () => {
   return (
     <nav>
       <div className="logo">
         <h1>Ninjalist</h1>
       </div>
-      <a>Home</a>
-      <a>About</a>
-      <a>Ninja Listing</a>
+      <DefaultLink path={Routes.HOME} text="Home" />
+      <DefaultLink path={Routes.ABOUT} text="About" />
+      <DefaultLink path={Routes.NINJAS} text="Ninjas Listing" />
     </nav>
   );
 };
